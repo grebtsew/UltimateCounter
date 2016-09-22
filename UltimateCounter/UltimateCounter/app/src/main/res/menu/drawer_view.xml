@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group android:checkableBehavior="none">
+
+
+        <item
+            android:id="@+id/nav_counter"
+
+            android:background="#F3F3F3"
+            android:title="Multiply"
+            app:actionLayout="@layout/action_view_number_selection" />
+
+        <item
+            android:id="@+id/nav_switch_shake"
+            android:background="#F3F3F3"
+            android:title="Shake Count"
+            app:actionLayout="@layout/action_view_switch_shake" />
+
+        <item
+            android:id="@+id/nav_switch_UP_DOWN"
+            android:background="#F3F3F3"
+            android:title="Shake +/-"
+            app:actionLayout="@layout/action_view_switch_up_down" />
+
+        <item
+            android:id="@+id/nav_switch_turn"
+            android:background="#F3F3F3"
+            android:title="Turn-based"
+            app:actionLayout="@layout/action_view_switch" />
+
+        <item
+            android:id="@+id/wanted_score"
+            android:background="#F3F3F3"
+            android:title="Sort +/-"
+            app:actionLayout="@layout/action_view_switch_wanted_score" />
+
+
+    </group>
+
+
+</menu>

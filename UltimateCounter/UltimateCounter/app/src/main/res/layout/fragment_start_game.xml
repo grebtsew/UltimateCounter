@@ -1,0 +1,106 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/button2"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentRight="true"
+    android:layout_below="@+id/toolbar">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F3F3"
+        tools:context=".Fragments.StartGameFragment">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/tool_bar"
+
+            ></include>
+
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/toolbar"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|bottom"
+            android:background="@android:drawable/ic_input_add"
+            android:minHeight="60dp"
+            android:minWidth="60dp"
+            android:text="+" />
+
+        <ImageButton
+            android:id="@+id/clearbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/listView"
+            android:layout_gravity="right|bottom"
+            android:layout_toLeftOf="@+id/button5"
+            android:layout_toStartOf="@+id/button5"
+            android:background="@android:drawable/ic_notification_clear_all"
+            android:minHeight="60dp"
+            android:minWidth="60dp"
+            android:nestedScrollingEnabled="false"
+            android:text="c" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/button5"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/button5"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#9fd73628"
+            android:minHeight="100dp"
+            android:minWidth="200dp"
+            android:text="Start Counting"
+            android:textColor="#F0F0F0"
+            android:textSize="10pt"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button4"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/toolbar"
+            android:layout_gravity="center"
+            android:background="#F3F3F3"
+
+            android:footerDividersEnabled="false"
+            android:forceHasOverlappingRendering="false"
+            android:headerDividersEnabled="false"
+            android:listSelector="#2943A6"
+            android:nestedScrollingEnabled="false"
+            android:overScrollHeader="#9fd73628"
+
+            android:scrollingCache="false"
+            android:smoothScrollbar="true"
+            android:textFilterEnabled="false" />
+
+
+    </RelativeLayout>
+
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nvView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view" />
+
+</android.support.v4.widget.DrawerLayout>
