@@ -1,4 +1,4 @@
-#Ultimate Game Counter
+# Ultimate Game Counter
 Android app, counting a vaste amount of games
 
 An app i created to keep track of scores in games. 
